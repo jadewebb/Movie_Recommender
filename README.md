@@ -26,7 +26,7 @@ Samples were preprocessed and augmented to fit the DPO pairwise preference struc
 
 ### Cleaning
 
-Dataset was inspected and cleaned of duplicates, headers/prefixes (e.g., "rejected response:") and special reserved tokens. End-of-turn suffix tokens were enforced for all chosen and rejected responses for compatability with Llama 3.1
+Dataset was inspected and cleaned of duplicates, headers/prefixes (e.g., "rejected response:") and special reserved tokens. End-of-turn suffix tokens were enforced for all chosen and rejected responses to maintain Llama 3.1 structure
 
 Final dataset was saved as a JSON file in the format:
 
