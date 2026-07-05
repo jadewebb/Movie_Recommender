@@ -4,7 +4,7 @@ Performing DPO to align QLoRA-configured Llama 3.1 for accurate movie recommenda
 
 ## Dataset
 
-DistillRecDial: diverse multi-turn conversational movie recommendation dataset formatted according to the Llama 3.1 chat template
+**DistillRecDial**: diverse multi-turn conversational movie recommendation dataset formatted according to the Llama 3.1 chat template
    
    - Source: https://huggingface.co/datasets/swap-uniba/DistillRecDial
    
@@ -18,7 +18,7 @@ DistillRecDial: diverse multi-turn conversational movie recommendation dataset f
 
 Subset of 500 dataset samples were randomly selected for tuning efficiency
 
-Samples were preprocessed and augmented to fit the DPO pairwise preference structure. Preprocessing was performed by splitting conversations at the recommendation turn. Augmentation was performed by prompting GPT-4o-mini to generate rejected recommendations for each conversation
+Samples were preprocessed and augmented to fit the DPO pairwise preference structure. **Preprocessing** was performed by splitting conversations at the recommendation turn. **Augmentation** was performed by prompting **GPT-4o-mini** to generate rejected recommendations for each conversation
 
    - Prompt: Entire conversation context up until the active recommendation turn
    - Chosen: Assistant's recommendation turn, accurate to user preferences
