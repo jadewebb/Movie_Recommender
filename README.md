@@ -71,7 +71,7 @@ Visualizations were created to gain the following insights:
    - **Training Policy Log-Probability Suppression**: The model maintained a steady sequence log-probability for chosen responses while suppressing the likelihood of rejected responses
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="1000"></p>
+<img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="1200"></p>
 
 ## Simple Evaluation
 
