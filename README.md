@@ -20,13 +20,13 @@ Subset of 500 dataset samples were randomly selected for tuning efficiency
 
 Samples were preprocessed and augmented to fit the **DPO pairwise preference structure**
 
-**Preprocessing** was performed by splitting conversations at the recommendation turn
-
-**Augmentation** was performed by prompting **GPT-4o-mini** to generate rejected recommendations for each conversation
-
    - Prompt: Entire conversation context up until the active recommendation turn
    - Chosen: Assistant's recommendation turn, accurate to user preferences
    - Rejected: Augmented recommendation, inaccurate to user preferences
+
+**Preprocessing** was performed by splitting conversations at the recommendation turn
+
+**Augmentation** was performed by prompting **GPT-4o-mini** to generate rejected recommendations for each conversation
 
 ### Cleaning
 
