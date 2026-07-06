@@ -61,14 +61,14 @@ Step | Training Loss | Validation Loss | Entropy | Logits/chosen | Logits/reject
 
 Visualizations were created to gain the following insights:
 
-   - Cross-entropy loss minimization
-   - Gradient stability
-   - Learning rate decay
-   - Alignment preference reward margin growth
-   - Predictive vocabilary entropy compression
-   - Policy divergence
-   - Implicit reward shifts
-   - Training policy log-probability suppression
+   - **Cross-Entropy Loss Minimization**: The training and validation losses decrease together, demonstrating ideal optimization trajectory and proper alignment generalization without overfitting
+   - **Gradient Stability**: The smooth L2 gradient norm decay verifies strong training stability
+   - **Cosine Learning Rate Decay Schedule**: The learning rate follows the expected cosine decay trajectory, ensuring stable convergence
+   - **Alignment Preference Reward Margin Growth**: The parallel growth of the training and validation reward margins demonstrates that the DPO objective successfully widened the behavioral gap between chosen and rejected responses
+   - **Predictive Vocabulary Entropy Compression**: The Shannon entropy remains bounded, demonstrating that the model avoided mode collapse and preserved conversational diversity
+   - **Policy Divergence**: The simultaneous growth of the training and validation delta log-probabilities demonstrates that the policy shifted its probability mass to learn broad structural rules that differentiate chosen and rejected responses
+   - **Implicit Reward Shifts**: For both training and validation, the chosen sequences achieved sustained positive rewards while the rejected sequences were increasingly penalized
+   - **Training Policy Log-Probability Suppression**: The model maintained a steady sequence log-probability for chosen responses while suppressing the likelihood of rejected responses
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="1000"></p>
