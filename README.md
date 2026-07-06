@@ -67,4 +67,4 @@ Visualizations were created to gain the following insights:
    - Training policy log-probability suppression
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="700"></p>
+<img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="1000"></p>
