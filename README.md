@@ -68,3 +68,7 @@ Visualizations were created to gain the following insights:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/jadewebb/Movie_Recommender/main/DPO_metrics.png" width="1000"></p>
+
+## Simple Evaluation
+
+The final model was evaluated by feeding it a novel test conversation and analyzing the recommender output. Performance demonstrates strong signals of the **conversational tone and length** established by the dataset, as well as the **strict adherence to multiple user preferences** expressed across two conversational turns. Further experimentation is needed to develop an interactive movie recommender system, rather than a static model that focuses only on the recommendation step.
