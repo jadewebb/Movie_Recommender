@@ -47,7 +47,7 @@ Dataset was shuffled and split into training and validation sets (90:10)
 
 **Llama 3.1 8B Instruct** tokenizer and pretrained model were loaded with 4-bit normal float quantization using transformers. Two Llama 3.1 instances were loaded to perform DPO, one as the **base** (policy) model and another as the static **reference** model to prevent drift
 
-QLoRA PEFT configuration and DPO trainer hyperparameters were tuned for optimal fine-tuning efficiency, memory usage, and metric accuracy
+**QLoRA PEFT configuration** and **DPO trainer** hyperparameters were tuned for optimal fine-tuning efficiency, memory usage, and metric accuracy
 
 Fine-tuning was performed for 1 epoch to prevent overfitting, with the final metrics being:
 
